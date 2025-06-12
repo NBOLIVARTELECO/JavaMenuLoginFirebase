@@ -18,8 +18,8 @@ public class GalleryFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        GalleryViewModel galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
+        com.example.javamenulogin.ui.gallery.GalleryViewModel galleryViewModel =
+                new ViewModelProvider(this).get(com.example.javamenulogin.ui.gallery.GalleryViewModel.class);
 
         binding = FragmentGalleryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
